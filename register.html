@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Login to Fire 🔥" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Log in to Fire 🔥</title>
+        <link rel="stylesheet" href="/assets/css/login.css" />
+        <script>if(window.location.hostname !== 'localhost') {if (location.protocol !== 'https:') {location.replace(`https:${location.href.substring(location.protocol.length)}`)}};</script>
+	</head>
+	<body>
+        <div class="loading">
+            <img src="/assets/images/registrationsuccess.gif" alt="Loading">
+        </div>
+		<div class="wrapper">
+            <div class="loginContainer">
+                <h1>Register</h1>
+                <form method="post" onsubmit="submitForm('register'); return false">
+                    <p class="errorMessage"></p>
+                    <input
+                        type="text"
+                        name="firstName"
+                        id="firstName"
+                        placeholder="First Name"
+                        required
+                        autofocus
+                    />
+                    <input
+                        type="text"
+                        name="lastName"
+                        id="lastName"
+                        placeholder="Last Name"
+                        required=""
+                    />
+                    <input
+                        type="text"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                        required
+                        autofocus
+                    />
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Password"
+                        required=""
+                    />
+                    <input type="submit" value="Register" />
+                </form>
+                <a href="/login.html">Have an account? Login here.</a>
+            </div>
+        </div>
+        <script src="/assets/js/lovefield.js"></script>
+        <script src="/assets/js/pure.js"></script>
+        <script src="/assets/js/login.js"></script>
+
+        
+	</body>
+</html>
