@@ -34,6 +34,8 @@ schemaBuilder.connect().then(async (db) => {
     user = await getUserDetails()
     if(user != undefined) {
         console.log(user)
+        document.querySelector(".userCard").innerHTML = returnUserCard(user)
+        document.querySelector(".loading").remove()
     }
     else {
         // userDb.delete().from(item).exec() // Clear session or Logout Query
