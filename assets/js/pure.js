@@ -1,3 +1,5 @@
+const FIRE_REGISTRATION_ENDPOINT = "http://localhost:3003/api/apis/api/register"
+
 function returnUserCard(user) {
 	return `<div class="userContainer">
                 <div class="transparentCard">
