@@ -26,6 +26,7 @@ html, body {
 .firstPart {
     display: flex;
     align-items: center;
+    padding: 20px;
 }
 
 .centering {
