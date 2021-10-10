@@ -36,9 +36,11 @@ schemaBuilder.connect().then(async (db) => {
         console.log(user)
         document.querySelector(".userCard").innerHTML = returnUserCard(user)
         document.querySelector(".loading").remove()
+
+        let html = await getAPIArrayHtml(user)
+        document.querySelector(".allApiContainer").innerHTML = html
     }
     else {
-        // userDb.delete().from(item).exec() // Clear session or Logout Query
         window.location.href = "/login.html"
     }
 })
@@ -73,3 +75,18 @@ async function getTransactions() {
         })
     })
 }
+
+async function getAPIArrayHtml (user) {
+    const FIRE_GET_ENDPOINT = "http://localhost:3003/api/apis/data"
+    let id = user._id
+
+    let response = await fetch(`${FIRE_GET_ENDPOINT}/${id}`)
+
+    let data = await response.json()
+    let html = ""
+    data.forEach(element => {
+        html += returnAPICard(element)
+    })
+
+    return html
+} 

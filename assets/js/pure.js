@@ -21,12 +21,14 @@ function returnAPICard (api) {
             <span class='domainName'>${api.domainName}</span>
         </div>
         <div class='apiInformation'>
-            <div class='apiKey'>
-                <span>${api._id}</span>
-                <button class='copyAPIId' data-id="${api._id}">Copy</button>
-            </div>
             <div class="transactionNumbers">
                 <span>Used: ${api.transactionNumbers} times</span>
+            </div>
+            <div class="apiKey">
+                <input type="text" value="${api._id}" onkeydown="return false">
+                <button onclick="copyToClipboard('${api._id}')">
+                    <img src="/assets/images/copy.svg" alt="Copy">
+                </button>
             </div>
         </div>
     </div>`
