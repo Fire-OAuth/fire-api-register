@@ -90,3 +90,9 @@ async function getAPIArrayHtml (user) {
 
     return html
 } 
+
+document.querySelector(".logout").addEventListener("click", () => {
+    userDb.delete().from(item).exec().then(() => {
+        window.location.href = "/login.html"
+    })
+})
