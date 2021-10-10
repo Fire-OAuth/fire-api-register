@@ -103,3 +103,7 @@ function renderAPICard(data) {
 
     </div>`
 }
+
+async function copyToClipboard(copyText) {
+    await navigator.clipboard.writeText(copyText)
+}
