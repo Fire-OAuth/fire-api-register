@@ -153,16 +153,6 @@ a {
     filter: grayscale(1) invert(1);
 }
 
-.fadeIn {
-    opacity: 1;
-    transition: opacity linear 0.8s 0s;
-}
-
-.fadeOut {
-    opacity: 0;
-    transition: opacity linear 0.8s 0s;
-}
-
 .readMore {
     display: flex;
     flex-direction: column;
