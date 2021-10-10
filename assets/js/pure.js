@@ -3,7 +3,7 @@ function returnUserCard(user) {
                 <div class="transparentCard">
                     <img src="${user.profilePic}" alt="Profile Pic">
                 </div>
-                <div class="userCard">
+                <div class="userCard pt-25">
                     <div class="nameContainer">
                         <span class="firstName">${user.firstName}</span>
                         <span class="lastName">${user.lastName}</span>
