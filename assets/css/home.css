@@ -70,6 +70,12 @@ html, body {
     padding-top: 25px;
 }
 
+.secondPart {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
 .registerAPI {
     background-color: #1a73e8;
     border: 1px solid #f8f9fa;
@@ -86,7 +92,88 @@ html, body {
     user-select: none;
 }
 
+.logout {
+    background-color: #e84118;
+}
+
 .userCard a {
     text-decoration: none;
     color: #3498db;
+}
+
+.newApiButtonContainer {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+.allApiContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.apiContainer {
+    padding: 20px;
+    background-color: #1a73e8;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    margin: 20px 0 0;
+}
+
+.domainInformation {
+    height: 35px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.transactionNumbers {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.apiKey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apiKey input[type="text"] {
+    height: 22px;
+    line-height: 16px;
+    vertical-align: middle;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 25ch;
+    border-radius: 6px;
+    outline: none;
+    text-align: center;
+}
+
+.apiKey button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.apiKey button img {
+    height: 32px;
+    width: 32px;
+    filter: grayscale(1) invert(1);
 }
