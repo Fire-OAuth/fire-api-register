@@ -8,6 +8,24 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="formContainer">
+            <div class="title">Enter details to get your API</div>
+            <div class="errorMessage"></div>
+            <form onsubmit="registerAPI(); return false">
+                <div class="inputContainer">
+                    <input type="text" name="domainName" placeholder="Domain Name / URL" id="domainName">
+                </div>
+                <div class="inputContainer">
+                    <input type="text" name="email" placeholder="Email" id="email">
+                </div>
+                <div class="inputContainer">
+                    <input type="password" name="password" placeholder="Password" id="password">
+                </div>
+                <div class="buttonContainer">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/assets/js/pure.js"></script>
