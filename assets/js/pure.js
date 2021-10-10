@@ -15,6 +15,23 @@ function returnUserCard(user) {
             </div>`
 }
 
+function returnAPICard (api) {
+    return `<div class='apiContainer'>
+        <div class='domainInformation'>
+            <span class='domainName'>${api.domainName}</span>
+        </div>
+        <div class='apiInformation'>
+            <div class='apiKey'>
+                <span>${api._id}</span>
+                <button class='copyAPIId' data-id="${api._id}">Copy</button>
+            </div>
+            <div class="transactionNumbers">
+                <span>Used: ${api.transactionNumbers} times</span>
+            </div>
+        </div>
+    </div>`
+}
+
 function getDomain(url) {
     let newUrl = new URL(url)
     return newUrl.hostname
