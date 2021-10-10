@@ -76,3 +76,30 @@ function showListOfTransactions (data) {
 
     return html
 }
+
+function renderAPICard(data) {
+    return `<div class='dataContainer'>
+        <div class="apiContainer formContainer">
+            <div class="domainName">
+                <span>${data.domainName}</span>
+            </div>
+            <div class="apiTitle">
+                <span>Your API Key</span>
+            </div>
+            <div class="apiKey">
+                <input type="text" value="${data._id}" onkeydown="return false">
+                <button onclick="copyToClipboard('${data._id}')">
+                    <img src="/assets/images/copy.svg" alt="Copy">
+                </button>
+            </div>
+        </div>
+
+        <div class="readMore">
+            <a href='https://github.com/Fire-OAuth/client-server/wiki'>
+                <button>Read Docs</button>
+            </a>
+            <span>To know more about how to use this, click the above button</span>
+        </div>
+
+    </div>`
+}
