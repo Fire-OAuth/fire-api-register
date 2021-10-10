@@ -23,6 +23,11 @@ html, body {
 
 }
 
+.firstPart {
+    display: flex;
+    align-items: center;
+}
+
 .centering {
     display: flex;
     flex-direction: column;
@@ -57,8 +62,27 @@ html, body {
 
 .userCard {
     text-align: center;
-    padding-top: 4rem;
     font-size: 1.5rem;
+}
+
+.pt-25 {
+    padding-top: 25px;
+}
+
+.registerAPI {
+    background-color: #1a73e8;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #fff;
+    font-family: arial,sans-serif;
+    font-size: 1rem;
+    margin: 11px 4px;
+    padding: 12px 16px;
+    line-height: 27px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
 }
 
 .userCard a {
