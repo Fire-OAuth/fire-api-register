@@ -84,7 +84,7 @@ async function getAPIArrayHtml (user) {
 
     let data = await response.json()
     let html = ""
-    data.forEach(element => {
+    data.reverse().forEach(element => {
         html += returnAPICard(element)
     })
 
