@@ -109,3 +109,38 @@ function renderAPICard(data) {
 async function copyToClipboard(copyText) {
     await navigator.clipboard.writeText(copyText)
 }
+
+async function registerAPI() {
+
+    let domainName = document.getElementById("domainName").value
+    let email = document.getElementById("email").value
+    let password = document.getElementById("password").value
+
+    let response = await fetch(FIRE_REGISTRATION_ENDPOINT, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            domainName,
+            email,
+            password
+        })
+    })
+
+    
+    let data = await response.json()
+
+    if(response.status === 201) { 
+        $(".formContainer").remove()
+        let html = renderAPICard(data)
+    
+        $(".wrapper").append(html)
+        $(".dataContainer").fadeIn(1000)
+
+        return false
+    }
+    
+    document.querySelector(".errorMessage").innerHTML = data.message; 
+    return false;
+}
