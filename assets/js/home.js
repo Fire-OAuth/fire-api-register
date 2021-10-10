@@ -33,7 +33,6 @@ schemaBuilder.connect().then(async (db) => {
     item = db.getSchema().table("User")
     user = await getUserDetails()
     if(user != undefined) {
-        console.log(user)
         document.querySelector(".userCard").innerHTML = returnUserCard(user)
         document.querySelector(".loading").remove()
 

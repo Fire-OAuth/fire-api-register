@@ -25,7 +25,7 @@ function returnAPICard (api) {
                 <span>Used: ${api.transactionNumbers} times</span>
             </div>
             <div class="apiKey">
-                <input type="text" value="${api._id}" onkeydown="return false">
+                <input aria-label="API Key" type="text" value="${api._id}" onkeydown="return false">
                 <button onclick="copyToClipboard('${api._id}')">
                     <img src="/assets/images/copy.svg" alt="Copy">
                 </button>
@@ -108,7 +108,7 @@ function renderAPICard(data) {
                 <span>Your API Key</span>
             </div>
             <div class="apiKey">
-                <input type="text" value="${data._id}" onkeydown="return false">
+                <input aria-label="API Key" type="text" value="${data._id}" onkeydown="return false">
                 <button onclick="copyToClipboard('${data._id}')">
                     <img src="/assets/images/copy.svg" alt="Copy">
                 </button>
