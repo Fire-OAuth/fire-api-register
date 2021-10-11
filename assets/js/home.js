@@ -1,3 +1,4 @@
+const FIRE_GET_ENDPOINT = "http://localhost:3003/api/apis/data"
 let user
 
 let schemaBuilder = lf.schema.create("userData", 1)
@@ -76,7 +77,6 @@ async function getTransactions() {
 }
 
 async function getAPIArrayHtml (user) {
-    const FIRE_GET_ENDPOINT = "http://localhost:3003/api/apis/data"
     let id = user._id
 
     let response = await fetch(`${FIRE_GET_ENDPOINT}/${id}`)
