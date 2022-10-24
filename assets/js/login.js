@@ -1,4 +1,4 @@
-let fireServerURL = 'http://localhost:3003/api/apis'
+let fireServerURL = 'https://fire.adaptable.app/api/apis'
 
 let user
 

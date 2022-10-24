@@ -1,4 +1,4 @@
-const FIRE_REGISTRATION_ENDPOINT = "http://localhost:3003/api/apis/api/register"
+const FIRE_REGISTRATION_ENDPOINT = "https://fire.adaptable.app/api/apis/api/register"
 
 function returnUserCard(user) {
 	return `<div class="userContainer">

@@ -1,4 +1,4 @@
-const FIRE_GET_ENDPOINT = "http://localhost:3003/api/apis/data"
+const FIRE_GET_ENDPOINT = "https://fire.adaptable.app/api/apis/data"
 let user
 
 let schemaBuilder = lf.schema.create("userData", 1)
