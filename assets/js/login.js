@@ -1,4 +1,4 @@
-let fireServerURL = 'https://fire.adaptable.app/api/apis'
+let fireServerURL = 'https://fire.cybernode.dev/api/apis'
 
 let user
 
